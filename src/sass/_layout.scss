@@ -1,0 +1,98 @@
+@import "variables";
+
+html {
+    font-size: 10px; //set 1rem to 10px;
+}
+
+#playerPicker {
+
+    width: 25rem;
+    // height: 50rem;
+    height: 50rem;
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+
+    p {
+        margin-block-end: 0;
+        margin-block-start: 0;
+    }
+
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #statsArea {
+        background-color: $color-primary;
+        color: $color-text-primary;
+        height: 50%;
+        width: 100%;
+        position: relative;
+        color: #fff;
+        
+
+
+        #teamLogo {
+            border: 1px solid green;
+            width: 30%;
+            aspect-ratio: 1;
+            position: absolute;
+            right: 1rem;
+            top: 0;
+            background-color: white;
+            transform: translateY(-40%);
+            border-radius: 50%;
+        }
+
+        #stats {
+            margin-top: 1rem;
+            display: grid;
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+            gap: 0.2rem;
+            
+
+            .statsRow {
+                color: $color-text-primary;
+                background-color: $color-bg1;
+                display: flex;
+                justify-content: space-between;
+                padding: 0.75rem;
+                align-items: center;
+
+
+
+                .statsRowHeading {
+                    font-size: 1.4rem;
+                    // border: 1px solid black;
+                }
+
+                .statsRowNumber {
+                    font-size: 1.6rem;
+                    // border: 1px solid blue;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .text-player {
+            font-size: 1.8rem;
+            line-height: 3rem;
+        }
+
+        .text-position {
+            font-size: 1.2rem;
+            // line-height: 2rem;
+        }
+
+    }
+
+
+
+}
+
+#playerDropdown {}
+
+#clubIcon {}
