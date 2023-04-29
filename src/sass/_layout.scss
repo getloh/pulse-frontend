@@ -1,16 +1,17 @@
-@import "variables";
+
 
 html {
-    font-size: 14px; //set 1rem to 10px;
+    font-size: 14px; //set 1rem to 10px - Changing this will scale the entire app
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #playerPicker {
-
     width: 25rem;
-    // height: 50rem;
-    // height: 100vh;
-    // width: 100vw;
-    // border: 2px solid blue;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -31,35 +32,30 @@ html {
         width: 100%;
         font-size: 1.4rem;
         padding: 0.8rem;
-
+        background-color: $color-bg1;
+        border: none;
+        
+        // Chevron change
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-
-        background-color: $color-bg1;
-        border: none;
-
         background-image: url("../assets/icons/expand.svg");
         background-position: right 0.5rem top 50%;
         background-repeat: no-repeat;
+        //
     }
 
     #playerPictureContainer {
-
         background-image: url("../assets/background_pattern.png");
         background-repeat: no-repeat;
-        background-position: right 0 top 50%;
-        // border: 1px solid black;
-        // position: relative;
+        background-position: right 0 bottom 35%;
         padding-top: 1rem;
 
         #playerPicture {
-            // border: 1px solid blue;
             margin-bottom: -5px;
         }
 
     }
-
 
     #statsArea {
         background-color: $color-primary;
@@ -69,10 +65,7 @@ html {
         position: relative;
         color: #fff;
 
-
-
-        #teamLogo {
-            // border: 1px solid green;
+        #teamLogoContainer {
             width: 30%;
             aspect-ratio: 1;
             position: absolute;
@@ -97,7 +90,6 @@ html {
             grid-template-columns: repeat(1, minmax(0, 1fr));
             gap: 0.2rem;
 
-
             .statsRow {
                 color: $color-text-primary;
                 background-color: $color-bg1;
@@ -109,12 +101,10 @@ html {
 
                 .statsRowHeading {
                     font-size: 1.4rem;
-                    // border: 1px solid black;
                 }
 
                 .statsRowNumber {
                     font-size: 1.6rem;
-                    // border: 1px solid blue;
                     font-weight: 700;
                 }
             }
@@ -127,11 +117,6 @@ html {
 
         .text-position {
             font-size: 1.2rem;
-            // line-height: 2rem;
         }
-
     }
-
-
-
 }

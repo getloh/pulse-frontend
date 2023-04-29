@@ -315,6 +315,12 @@ html {
   font-size: 14px;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #playerPicker {
   width: 25rem;
   display: flex;
@@ -335,11 +341,11 @@ html {
   width: 100%;
   font-size: 1.4rem;
   padding: 0.8rem;
+  background-color: #eaeaea;
+  border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: #eaeaea;
-  border: none;
   background-image: url("../assets/icons/expand.svg");
   background-position: right 0.5rem top 50%;
   background-repeat: no-repeat;
@@ -347,7 +353,7 @@ html {
 #playerPicker #playerPictureContainer {
   background-image: url("../assets/background_pattern.png");
   background-repeat: no-repeat;
-  background-position: right 0 top 50%;
+  background-position: right 0 bottom 35%;
   padding-top: 1rem;
 }
 #playerPicker #playerPictureContainer #playerPicture {
@@ -361,7 +367,7 @@ html {
   position: relative;
   color: #fff;
 }
-#playerPicker #statsArea #teamLogo {
+#playerPicker #statsArea #teamLogoContainer {
   width: 30%;
   aspect-ratio: 1;
   position: absolute;
@@ -374,7 +380,7 @@ html {
   justify-content: center;
   align-items: center;
 }
-#playerPicker #statsArea #teamLogo img {
+#playerPicker #statsArea #teamLogoContainer img {
   height: 75%;
   width: 75%;
   aspect-ratio: 1;

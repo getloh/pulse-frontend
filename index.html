@@ -12,45 +12,45 @@
 
         <div id="playerPicker">
             <div class="container pt-1">
-                <select name="playerDropdown" id="playerDropdown" onchange="console.log(document.getElementById('playerDropdown').value)">
+                <select name="playerDropdown" id="playerDropdown" onchange="onSelectPlayer(document.getElementById('playerDropdown').value)">
                     <option value="4916" selected disabled hidden>Select a player</option>
                     <!--* Javascript will populate options from JSON here -->
                 </select>
             </div>
             <div id="playerPictureContainer">
 
-                <img id="playerPicture" src="./src/assets/players/p4916.png"/>
+                <img id="playerPicture" src="./src/assets/players/p4916.png" />
             </div>
 
             <div id="statsArea" class="">
                 <div class="container pb-1 pt-1">
 
-                    <div id="teamLogo">
-                        <img src="./src/assets/badges/TOT.png" alt="">
+                    <div id="teamLogoContainer">
+                        <img src="./src/assets/badges/21.png" alt="" id="teamLogo">
                     </div>
-                    <p class="text-player">Toby Alderweireld</p>
-                    <p class="text-position">Defender</p>
+                    <p id="playerName" class="text-player">Toby Alderweireld</p>
+                    <p id="playerPosition" class="text-position">Defender</p>
 
                     <div id="stats">
                         <div class="statsRow">
                             <p class="statsRowHeading">Appearances</p>
-                            <p class="statsRowNumber">80</p>
+                            <p class="statsRowNumber" id="statsAppearances">80</p>
                         </div>
-                        <div class="statsRow">
-                            <p class="statsRowHeading">Appearances</p>
-                            <p class="statsRowNumber">80</p>
+                        <div class="statsRow" >
+                            <p class="statsRowHeading">Goals</p>
+                            <p class="statsRowNumber" id="statsGoals">5</p>
                         </div>
-                        <div class="statsRow">
-                            <p class="statsRowHeading">Appearances</p>
-                            <p class="statsRowNumber">80</p>
+                        <div class="statsRow" >
+                            <p class="statsRowHeading">Assists</p>
+                            <p class="statsRowNumber" id="statsAssists">2</p>
                         </div>
-                        <div class="statsRow">
-                            <p class="statsRowHeading">Appearances</p>
-                            <p class="statsRowNumber">80</p>
+                        <div class="statsRow" >
+                            <p class="statsRowHeading">Goals per match</p>
+                            <p class="statsRowNumber" id="statsGoalsPerMatch">0.06</p>
                         </div>
-                        <div class="statsRow">
-                            <p class="statsRowHeading">Appearances</p>
-                            <p class="statsRowNumber">80</p>
+                        <div class="statsRow" >
+                            <p class="statsRowHeading">Passes per minute</p>
+                            <p class="statsRowNumber" id="statsPassesPerMinute">0.26</p>
                         </div>
                     </div>
                 </div>
