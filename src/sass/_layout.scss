@@ -1,19 +1,21 @@
 @import "variables";
 
 html {
-    font-size: 10px; //set 1rem to 10px;
+    font-size: 14px; //set 1rem to 10px;
 }
 
 #playerPicker {
 
     width: 25rem;
     // height: 50rem;
-    height: 50rem;
-    border: 2px solid blue;
+    // height: 100vh;
+    // width: 100vw;
+    // border: 2px solid blue;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     font-family: Arial, Helvetica, sans-serif;
+    position: relative;
 
     p {
         margin-block-end: 0;
@@ -25,6 +27,40 @@ html {
         padding-right: 1rem;
     }
 
+    #playerDropdown {
+        width: 100%;
+        font-size: 1.4rem;
+        padding: 0.8rem;
+
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+
+        background-color: $color-bg1;
+        border: none;
+
+        background-image: url("../src/assets/icons/expand.svg");
+        background-position: right 0.5rem top 50%;
+        background-repeat: no-repeat;
+    }
+
+    #playerPictureContainer {
+
+        background-image: url("../src/assets/background_pattern.png");
+        background-repeat: no-repeat;
+        background-position: right 0 top 50%;
+        // border: 1px solid black;
+        // position: relative;
+        padding-top: 1rem;
+
+        #playerPicture {
+            // border: 1px solid blue;
+            margin-bottom: -5px;
+        }
+
+    }
+
+
     #statsArea {
         background-color: $color-primary;
         color: $color-text-primary;
@@ -32,11 +68,11 @@ html {
         width: 100%;
         position: relative;
         color: #fff;
-        
+
 
 
         #teamLogo {
-            border: 1px solid green;
+            // border: 1px solid green;
             width: 30%;
             aspect-ratio: 1;
             position: absolute;
@@ -45,6 +81,14 @@ html {
             background-color: white;
             transform: translateY(-40%);
             border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                height: 75%;
+                width: 75%;
+                aspect-ratio: 1;
+            }
         }
 
         #stats {
@@ -52,7 +96,7 @@ html {
             display: grid;
             grid-template-columns: repeat(1, minmax(0, 1fr));
             gap: 0.2rem;
-            
+
 
             .statsRow {
                 color: $color-text-primary;
@@ -61,8 +105,7 @@ html {
                 justify-content: space-between;
                 padding: 0.75rem;
                 align-items: center;
-
-
+                border: 0;
 
                 .statsRowHeading {
                     font-size: 1.4rem;
@@ -92,7 +135,3 @@ html {
 
 
 }
-
-#playerDropdown {}
-
-#clubIcon {}

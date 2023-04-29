@@ -11,8 +11,7 @@
     <main>
 
         <div id="playerPicker">
-            <div>
-
+            <div class="container pt-1">
                 <select name="playerDropdown" id="playerDropdown" onchange="console.log(document.getElementById('playerDropdown').value)">
                     <option value="" selected disabled hidden>Select a player</option>
                     <option value="volvo">Volvo</option>
@@ -20,13 +19,18 @@
                     <option value="opel">Opel</option>
                     <option value="audi">Audi</option>
                 </select>
-                
+            </div>
+            <div id="playerPictureContainer">
+
+                <img id="playerPicture" src="./src/assets/players/p4916.png"/>
             </div>
 
             <div id="statsArea" class="">
                 <div class="container pb-1 pt-1">
 
-                    <div id="teamLogo"></div>
+                    <div id="teamLogo">
+                        <img src="./src/assets/badges/TOT.png" alt="">
+                    </div>
                     <p class="text-player">Toby Alderweireld</p>
                     <p class="text-position">Defender</p>
 
