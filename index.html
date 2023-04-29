@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/main.css"
+    <title>Pulselive frontend playerpicker</title>
+    <link rel="stylesheet" href="src/css/main.css"
 </head>
 <body>
     <main>
@@ -13,11 +13,8 @@
         <div id="playerPicker">
             <div class="container pt-1">
                 <select name="playerDropdown" id="playerDropdown" onchange="console.log(document.getElementById('playerDropdown').value)">
-                    <option value="" selected disabled hidden>Select a player</option>
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="opel">Opel</option>
-                    <option value="audi">Audi</option>
+                    <option value="4916" selected disabled hidden>Select a player</option>
+                    <!--* Javascript will populate options from JSON here -->
                 </select>
             </div>
             <div id="playerPictureContainer">
@@ -61,5 +58,9 @@
         </div>
 
     </main>
+
+    <script src="./src/js/main.js">
+
+    </script>
 </body>
 </html>

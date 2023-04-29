@@ -7,7 +7,7 @@ var scssPath = './src/sass/*.scss';
 gulp.task('sass', function () {
     return gulp.src(scssPath)
     .pipe(sass.sync().on('error', sass.logError))
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('./src/css'));
 });
 
 gulp.task("sass:watch", function() {
